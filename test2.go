@@ -56,26 +56,29 @@ func reduce(src *lepton3.Frame) *image.Gray16 {
 }
 
 func main() {
-
 	// Init host
 	_, err := host.Init()
 	if err != nil {
-		fmt.Println("Error in init host")
+		fmt.Printf("Error in init host: %v\n", err)
+		return
 	}
 
 	speed := int64(20000000)
 	camera, err := lepton3.New(speed)
 	if err != nil {
-		fmt.Println("Error in lepton3.New(speed)")
+		fmt.Printf("Error in lepton3.New(speed): %v\n", err)
+		return
 	}
 
-	// if err := camera.SetRadiometry(true); err != nil {
-	// 	fmt.Println("Error in camera.SetRadiometry(true)")
-	// }
+	if err := camera.SetRadiometry(true); err != nil {
+		fmt.Printf("Error in camera.SetRadiometry(true): %v\n", err)
+		return
+	}
 
 	err = camera.Open()
 	if err != nil {
-		fmt.Println("Error in camera.Open()")
+		fmt.Printf("Error in camera.Open(): %v\n", err)
+		return
 	}
 	defer camera.Close()
 
@@ -85,7 +88,8 @@ func main() {
 	for {
 		err := camera.NextFrame(rawFrame)
 		if err != nil {
-			fmt.Println("Error in camera.NextFrame")
+			fmt.Printf("Error in camera.NextFrame: %v\n", err)
+			return
 		}
 
 		rawFrame.ToFrame(frame)
@@ -93,7 +97,8 @@ func main() {
 		filename := filepath.Join("/home/pi", fmt.Sprintf("%05d.png", i))
 		err = dumpToPNG(filename, frame)
 		if err != nil {
-			fmt.Println("Error in dumpToPNG")
+			fmt.Printf("Error in dumpToPNG: %v\n", err)
+			return
 		}
 		i++
 	}
