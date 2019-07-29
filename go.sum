@@ -1,0 +1,14 @@
+github.com/TheCacophonyProject/lepton3 v0.0.0-20190715012645-46e70a4e1b3f h1:2sTJ2R1hs6dzJv2PZKIAoYamBFQQAsXjnmDvo1GXKfg=
+github.com/TheCacophonyProject/lepton3 v0.0.0-20190715012645-46e70a4e1b3f/go.mod h1:yShL/C1UD2IGzlXF1qmH7EfIPdRkzaK4kShR65/l0As=
+github.com/TheCacophonyProject/periph v2.0.0+incompatible h1:XQklZNyWxnP1P2D7uJHRaJxs6511owzWURAWNjxGao4=
+github.com/TheCacophonyProject/periph v2.0.0+incompatible/go.mod h1:K1wa07sGXKzV0G9p+4R069mZk4GOpqKW8GU6/k+BrIo=
+github.com/TheCacophonyProject/periph v2.0.1-0.20171123021141-d06ef89e37e8+incompatible h1:HNEla6Hv+j5M3rdH4D+1MTZeVhsyi17zqpvl998/ssI=
+github.com/TheCacophonyProject/periph v2.0.1-0.20171123021141-d06ef89e37e8+incompatible/go.mod h1:K1wa07sGXKzV0G9p+4R069mZk4GOpqKW8GU6/k+BrIo=
+github.com/alexflint/go-arg v0.0.0-20180516182405-f7c0423bd11e/go.mod h1:PHxo6ZWOLVMZZgWSAqBynb/KhIqoGO6WKwOVX7rM9dg=
+github.com/alexflint/go-scalar v0.0.0-20170216020425-e80c3b7ed292/go.mod h1:dgifnFPveotJNpwJdl1hDPu5vSuqVVUPIr3isfcvgBA=
+github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
+golang.org/x/net v0.0.0-20180811021610-c39426892332/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
+gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637 h1:yiW+nvdHb9LVqSHQBXfZCieqV4fzYhNBql77zY0ykqs=
+gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637/go.mod h1:BHsqpu/nsuzkT5BpiH1EMZPLyqSMM8JbIavyFACoFNk=
